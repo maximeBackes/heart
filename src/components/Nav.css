@@ -1,0 +1,16 @@
+.navbar{
+  display: block;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: cyan;
+  bottom: 0;
+}
+
+.navbarlinks{
+  display: flex;
+}
+
+.navbarlink{
+  padding: 0;
+}
