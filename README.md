@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Authors of this project:
+Maxime Backes, Julie Billon, Cédric Darrou, Elise Perrot
+
 ## Available Scripts
 
 In the project directory, you can run:
