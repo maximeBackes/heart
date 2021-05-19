@@ -14,8 +14,8 @@ code {
 
 button{
 display: inline-block;
-background-color: #faf8fc;
-border: 4px double #C0DFE4;
+background-color: #C0DFE4;
+border: 4px double #ffffff;
 border-radius: 50px;
 color: #161111;
 text-align: center;
@@ -47,3 +47,8 @@ input{
 #test{
   font-size: 18px;
 }
+
+#calendrier{
+  text-align: center;
+}
+
