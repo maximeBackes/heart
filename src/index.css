@@ -12,11 +12,6 @@ code {
     monospace;
 }
 
-#acceuil {
-  padding: 100px 0;
-  
-}
-
 button{
 display: inline-block;
 background-color: #faf8fc;
@@ -30,20 +25,25 @@ width: 200px;
 }
 
 input{
-  color: #161111;
   border-radius: 50px;
-  
+  border-color: #C0DFE4;
 }
 
 #a {
   width: 200px;
   padding: 20px;
+  font-size: 15px;
+  text-align: center;
 }
 
 #message{
   color: #161111;
-  font-size: 28px;
+  font-size: 12px;
   padding: 100px;
-  width: 300px; 
+  width: 250px; 
   text-size-adjust: 40px;
+}
+
+#test{
+  font-size: 18px;
 }
