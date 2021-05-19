@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#acceuil {
+  padding: 100px 0;
+  
+}
+
+button{
+display: inline-block;
+background-color: #faf8fc;
+border: 4px double #C0DFE4;
+border-radius: 50px;
+color: #161111;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+}
+
+input{
+  color: #161111;
+  border-radius: 50px;
+  
+}
+
+#a {
+  width: 200px;
+  padding: 20px;
+}
+
+#message{
+  color: #161111;
+  font-size: 28px;
+  padding: 100px;
+  width: 300px; 
+  text-size-adjust: 40px;
+}
