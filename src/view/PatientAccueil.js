@@ -11,6 +11,7 @@ function PatientAccueil() {
         <Button label="Consulter mes données" link="/ConsultationDonneesPatient"/>
         <Button label="Prendre rendez-vous" link="/RDVPatient"/>
         <Button label="Contacter mon médecin" link="/ContacterMedecin"/>
+        <Button label="Mes informations" link="/InfoGenerales"/>
       </div>
     );
   }
