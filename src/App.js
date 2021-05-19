@@ -23,6 +23,8 @@ import RDVPatient from './view/RDVPatient';
 
 import Nav from './components/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import InfoGenerales from "./view/InfoGenerales";
+import PatientMesRDV from "./view/PatientMesRendez-vous";
 
 
 function App() {
@@ -48,7 +50,9 @@ function App() {
           <Route path="/PatientAccueil" exact component={PatientAccueil}/>
           <Route path="/ConsultationDonneesPatient" exact component={ConsultationDonneesPatient}/>  
           <Route path="/ContacterMedecin" exact component={ContacterMedecin}/>  
-          <Route path="/RDVPatient" exact component={RDVPatient}/>  
+          <Route path="/RDVPatient" exact component={RDVPatient}/>
+          <Route path="/InfoGenerales" exact component={InfoGenerales}/>
+          <Route path="/PatientMesRDV" exact component={PatientMesRDV}/>  
   
         </Switch>
       </Router>
