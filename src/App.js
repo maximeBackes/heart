@@ -25,6 +25,7 @@ import Nav from './components/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import InfoGenerales from "./view/InfoGenerales";
 import PatientMesRDV from "./view/PatientMesRendez-vous";
+import PatientReco from "./view/PatientReco";
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
           <Route path="/RDVPatient" exact component={RDVPatient}/>
           <Route path="/InfoGenerales" exact component={InfoGenerales}/>
           <Route path="/PatientMesRDV" exact component={PatientMesRDV}/>  
-  
+          <Route path="/PatientReco" exact component={PatientReco}/>
         </Switch>
       </Router>
     </div>

@@ -52,3 +52,14 @@ input{
   text-align: center;
 }
 
+#reco{
+background-color: #C0DFE4;
+border: 4px double #ffffff;
+border-radius: 50px;
+color: #161111;
+font-size: 18px;
+padding: 40px;
+width: 250px;
+position:absolute; 
+left:42.5%
+}
