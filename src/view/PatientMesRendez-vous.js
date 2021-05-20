@@ -13,4 +13,4 @@ function PatientMesRDV() {
     );
   }
   
-    export default PatientAccueil;
+    export default PatientMesRDV;
