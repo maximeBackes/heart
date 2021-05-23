@@ -8,6 +8,7 @@ function Nav() {
         <nav>
             <Link to="/">Home</Link>
             <Link to="/Exemple">Exemple</Link>
+            <Link to="../components/TableauDeBord">Tableau De Bord</Link>
         </nav>
       </div>
     );
