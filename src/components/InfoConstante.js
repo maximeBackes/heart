@@ -1,8 +1,8 @@
 // info constante est la structure qui contient une constante comme 'Activité' ou 'Pression artérielle'
-import React, { Children, Component } from 'react';
+import React, { Component } from 'react';
 
 
-const Const = (props, Children) => {
+const Const = (props) => {
 
     // check l'existence de données à afficher, sinon valeur par défaut
     if (props) {
@@ -13,7 +13,7 @@ const Const = (props, Children) => {
         )
     } else {
         return (
-            null
+            <p>Pas de donées à afficher, veuillez Synchroniser</p>
         )
     }
 }
