@@ -15,12 +15,12 @@ export default class TableauDeBord extends Component {
     state = {
         titre: <h1>{Patient.fullname()}</h1>,
         Infos: [
-            { name: "Activité", value: {Activity.fromJSON(baseURL)} },
+            /**{ name: "Activité", value: {Activity.fromJSON(baseURL)} },
             { name: "Fréquence cardiaque", value: {Patient.fromJSON(baseURL)} },
             { name: "Pression artérielle", value: {Patient.fromJSON(baseURL} },
             { name: "Oxygène", value: {Patient.fromJSON(baseURL} },
             { name: "Glycémie", value: {Patient.fromJSON(baseURL} }
-        ]
+        **/]
     }
 
     getConst = async () => {
