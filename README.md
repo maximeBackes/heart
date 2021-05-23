@@ -11,63 +11,49 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Le concept
+une application de suivi de cardiologie destinée à la fois aux patients et aux médecins.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Philosophie de l'application
+Cette plateforme s’adresse à toute personne souffrant de troubles cardiaques nécessitant un suivi continu, ainsi qu’aux professionnels de santé dans le cadre des soins coordonnés du patient. La plateforme a vocation à centraliser toutes les informations relatives à l’état de santé du patient pour les partager avec les professionnels de santé ou une personne tierce choisie explicitement. Les données sont issues de capteurs biométriques présents dans la plupart des montres connectées ou bien directement renseignées par l’utilisateur. Attention cependant : cette plateforme ne saurait se substituer aux visites régulières chez un professionnel de santé, il s’agit d’un outil supplémentaire pour formaliser le suivi de santé auprès du professionnel.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Les fonctionnalités de l'application
+### Must have :
 
-## Learn More
+* Fréquence cardiaque en temps réel avec un accès à l’historique sur une journée, une semaine, un mois. L’historique est automatique à partir de la montre
+* Suivi de l’activité physique : suivi du nombre de pas et recommandations générales fournies par l’application pour atteindre des objectifs et/ou des recommandations personnalisées émanant du médecin.
+* Annuaire des coordonnées du/des professionnels de santé pour le côté patient de l’application .
+* Annuaires des patients pour le côté docteur : comprend l’historique des patients issus des données de la montre, historique des rendez-vous, des traitements en cours ou passés, coordonnées du patient et des professionnels ou proches liés au patient.
+* Calendrier : agenda de rendez-vous pour le côté docteur et un agenda de prise de rendez-vous pour le patient.
+* Suivi des constantes avec la montre : stress, glycémie, pression artérielle, fréquence cardiaque, saturation en oxygène.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Should have :
 
-### Code Splitting
+* Rappel de médicaments à prendre (programmé ou non par le médecin).
+* Rubrique “à propos” : pour les différentes constantes mesurées donne des indications générales, les valeurs de norme de références (ex : 60 < Fréquence cardiaque normale au repos < 80) ainsi que des conseils en cas de non-norme (ex : en cas de pression artérielle trop élevée).
+* Rubrique “recommandation perso”: listes des recommandations à suivre pour la période en cours. Éditable par le médecin en fonction de l’état de santé globale du patient ainsi que par l’appli qui donnerait des recommandations génériques en fonction des constantes mesurées.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Could have :
 
-### Making a Progressive Web App
+* Espace pour renseigner les informations relatives au sommeil, à la prise alimentaire, etc...
+* Proposer spontanément des défis communs aux utilisateurs ou afficher la moyenne d’activité des utilisateurs par jour, “gamification” des objectifs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Difficultés rencontrées lors du développement :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Accès à l’API : Les données de e-santé étant considérées comme sensibles, il est difficile d’en trouver sans fournir un cadre légal d’utilisation des données. Pour des APIs moins restrictives (accès directement donné au endpoint) nous n’avons pas pu en trouver au format .json avec toutes les informations dont nous avions besoin.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
