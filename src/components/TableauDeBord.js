@@ -1,18 +1,41 @@
 // Le tableau de bord est la structure où l'utilisateur visualise et synchronise ses constantes
 import React, { Component } from 'react';
 import Const from './InfoConstante';
+import Patient from '../model/patient';
 
-class TableauDeBord extends Component {
+
+const axios_instance = axios.create({
+    baseURL: ,
+    timeout: 1000
+});
+
+export default class TableauDeBord extends Component {
 
     state = {
-        titre: "Mon suivi",
+        titre: <h1>{Patient.fullname()}</h1>,
         Infos: [
-            { name: "Activité", value: "--" },
+            { name: "Activité", value: {Patient} },
             { name: "Fréquence cardiaque", value: "--" },
             { name: "Pression artérielle", value: "--" },
             { name: "Oxygène", value: "--" },
             { name: "Glycémie", value: "--" }
         ]
+    }
+
+    getConst = async () => {
+        let result;
+        
+        let { id } = this.props.match.params;//get people id from url param (React Dom Router)
+
+        try {
+            //get data from API
+            result = await axios_instance.get('/people/' + id);
+            if (result.data) {
+                this.setState({ people: Patient.fromJSON(result.data) });
+            }
+        } catch (error) {
+            console.error(error);
+        }
     }
 
 
@@ -21,6 +44,7 @@ class TableauDeBord extends Component {
             // Balise contenant tous les éléments d'infos sur les constantes
             <div >
                 <h1>{this.state.titre}</h1>
+                <button onClick={this.getConst} >Synchroniser les données</button>
                 {
                     this.state.Infos.map((info, index) => {
                         return (
@@ -30,9 +54,8 @@ class TableauDeBord extends Component {
                         )
                     })
                 }
+                <button onClick={this.getConst}>Synchroniser les données</button>
             </div>
         )
     }
 }
-
-export default TableauDeBord;
