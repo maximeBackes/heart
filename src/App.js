@@ -17,6 +17,7 @@ import Preferences from './view/Preferences';
 import Login from './view/Login';
 import useToken from './useToken';
 import PatientAccueil from './view/PatientAccueil';
+import TableauDeBord from './components/TableauDeBord';
 import ConsultationDonneesPatient from './view/ConsultationDonneesPatient';
 import ContacterMedecin from './view/ContacterMedecin';
 import RDVPatient from './view/RDVPatient';
